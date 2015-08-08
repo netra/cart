@@ -6,3 +6,48 @@ body {
 a {
   color: #00B7FF;
 }
+#top-head{
+  background-color: #F5F5F5;
+  padding: 5px;
+}
+#top-head a{
+  margin-left:5px;
+  word-spacing: 2px;
+}
+#top-head h6{
+  display: inline;
+  color: gray;
+}
+#heading{
+  margin: 25px 0px 15px 0px;
+}
+#heading h4,p{
+  display: inline;
+}
+.col-sm-5 a{
+  display: block;
+  padding-top: 20px; 
+}
+#bottomtxt{
+  float : right;
+  margin-top:35px; 
+}
+.ltext{
+  padding-right: 20px;
+}
+#bottombox{
+  margin-top: 20px;
+ }
+.app{
+  color: orange;
+}
+.col-sm-2 img{
+  padding: 5px;
+  margin: 15px;
+}
+ 
+  
+ 
+.col-sm-1 p{
+	font-size: 10px;
+}
