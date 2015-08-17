@@ -4,6 +4,8 @@
  */
 var CartModel = {
 
+  // As a temporary work around, I am mocking the data
+  // In real-app this data would be coming from the Backend APIs.
   getData: function() {
     return  {
       items: [
