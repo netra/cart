@@ -9,7 +9,6 @@
     constructor: CartApp,
 
     setup: function() {
-
       // execute the code when DOM Ready event is fired
       $(document).ready(function() {
          $('body').on('change', '#sel1', function() {
@@ -19,11 +18,10 @@
             $("#cart-price").text("$"+ price * cost);
          });
       });
-
-
     }
+
   };
-  
+
   var execute = new CartApp();
   execute.setup();
   
