@@ -4,7 +4,6 @@ var controller = require('../controller/index');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  //res.render('index', { title: 'Express' });
   var data = controller.execute();
   res.render('index', data);
   
