@@ -9,21 +9,23 @@
         <a href="#" class="app">Learn More<span class="glyphicon glyphicon-play"></span></a> </strong>
         <h6>*Subject to credit approval</h6>
       </div>
-      <div id="heading">
-          <h4>Your Cart:</h4><p>1 item.</p>
-      </div>
 
-        <div class="row">          <!-- middle 2-5-2-1 collumes-->
+      {{#items}}
+
+        <div id="heading">
+            <h4>Your Cart:</h4><p>{{quantity}} item.</p>
+        </div>
+        <div class="row">          <!-- middle 2-5-2-1 columns -->
           <div class="col-sm-2" id="sam-img">
-            <img src="/images/samtv.jpg" height="80px" width="110px">
+            <img src="{{image}}" height="80px" width="110px">
           </div>
           <div class="col-sm-5">
-            <h5>This is some text.This is some text.This is some text.This is some text. </h5>
-            <p>Sort By: WalMart.com</p>
-            <a href="#">Sell all shipping and pick the option for 94087</a>
+            <h5>{{description}} </h5>
+            <p>Sort By: {{seller}}</p>
+            <a href="#">Sell all shipping and pick the option for {{zipcode}}</a>
           </div>
           <div class="col-sm-2">
-	          <label for="sel1">Quntity</label><select class="form-control" id="sel1">
+	          <label for="sel1">Quantity</label><select class="form-control" id="sel1">
             <option>1</option>
             <option>2</option>
             <option>3</option>
@@ -31,9 +33,9 @@
             </select>
            </div>
            <div class="col-sm-1 price-tag" id="price-tags">
-             <h4>$250.99</h4>
-             <p>was <del>$299.99</del></p>
-             <p>you save $50</p>
+             <h4>${{price}}</h4>
+             <p>was <del>${{saved}}</del></p>
+             <p>you save ${{totalSavings}}</p>
            </div>
          </div>
 
@@ -53,13 +55,17 @@
             </div>         
             <div class="col-sm-8" id="bottombox">
               <div class="panel panel-default">
-                <div class="panel-body"><img src="/images/walmart.gif" height="30px" width="35px">
-                  <a href="#">Add care plan for $25.00</a>  
+                <div class="panel-body"><img src="{{image}}" height="30px" width="35px">
+                  <a href="#">Add care plan for ${{careplan}}</a>  
                 </div>
               </div>
 	          </div>
           </div>
+
+      {{/items}}
+
     </div>
+
       <div class="col-sm-2" id="right-side">
         <h6 id="cart-price">$249.99</h6>
         <p>subtotal (1 iteam)</p>
@@ -71,8 +77,8 @@
         <h3><sup>$</sup> 276<sup>85</sup></h3>
         <button type="button" class="btn btn-info btn-lg">Check Out</button>
         <p>You earned <strong>Free Value Shipping!</strong></p>
-        <p><strong>Free pickup</strong>is available</p> 
-         <a href="#" id="last-line">Learn more about shipping costs & Free pick up</a>
+        <p><strong>Free pickup </strong>is available</p> 
+         <a href="#" id="last-line">Shipping costs & Free pick up</a>
          
         <!--div class="row">
           <div class="col-sm-1" id="left-line">
