@@ -10,4 +10,6 @@
 
 ## Mobile
 ![ScreenShot](https://github.com/netra/cart/blob/master/public/images/mobile-1.png)
+
+## Mobile
 ![ScreenShot](https://github.com/netra/cart/blob/master/public/images/mobile-2.png)
