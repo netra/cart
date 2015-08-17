@@ -3,10 +3,15 @@
   // constructor
   var CartApp = function () {
     console.log(" exeucting constructor..");
+    
   };
 
   CartApp.prototype = {
     constructor: CartApp,
+
+    init: function() {
+      this.setup();
+    },
 
     setup: function() {
       // execute the code when DOM Ready event is fired
@@ -23,6 +28,6 @@
   };
 
   var execute = new CartApp();
-  execute.setup();
+  execute.init();
   
 })(window.jQuery);
